@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Bootstrap link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Javascript link-->
+    <script src="javascript/game.js"></script>
+    <!--css style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+ <h1>Star Wars RPG</h1>
+ <div class="container-fluid">
+     <div class="row">
+         <div class="col-sm-2">            
+            <button type="button" class="btn btn-secondary player" id="skywalker" value="luke">
+            <p>Luke Skywalker</p>
+            <img src="http://img2.thejournal.ie/inline/3696974/original/?width=517&version=3696974" style="width: 150px"/>
+            <p id="score">100</p>
+            </button>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary player" id="kenobi" value="obi">
+            <p>Obi-Wan-Kenobi</p>
+            <img src="https://starwarsblog.starwars.com/wp-content/uploads/2017/08/obi-wan-quotes-tall.jpg" style="width: 150px"/>
+            <p id="score">120</p>
+            </button>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary player" id="darth-vader" value="vader">
+            <p>Darth Vader</p>
+            <img src="https://cdn.movieweb.com/img.news.tops/NEhIjhFFZXK2lk_1_b/Rogue-One-Star-Wars-Darth-Vader-James-Earl.jpg" style="width: 150px; height: 85px"/>
+            <p id="score">110</p>
+            </button>
+        </div>
+        <div class="col-sm-2">
+            <button type="button" class="btn btn-secondary player" id="darth-revan" value="revan">
+            <p>Darth Revan</p>
+            <img src="https://i.ytimg.com/vi/uQ8TmWrjoGg/maxresdefault.jpg" style="width: 150px"/>
+            <p id="score">140</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+         <h4>Your Character</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div id="chosenChar">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <button type="button" class="btn btn-secondary btn-sm attack">Attack</button>
+    </div>
+    <br>
+    <div class="row">
+        <h4>Enemies Available for Attack!</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div id="attackers">
+        </div>
+    </div>
+    <div class="row">
+        <h4>Your Opponent</h4>
+    </div>
+    <br>
+    <div class="row">
+        <div id="opponent">
+        </div>
+    </div>
+     
+ </div>
+    
+</body>
+</html>
